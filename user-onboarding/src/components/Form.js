@@ -90,7 +90,8 @@ export default function Form() {
       console.log("is my form valid?", valid);
       setButtonIsDisabled(!valid);
     });
-  }, [formState]);
+  }, [formSchema, formState]);
+
 
   console.log("formState", formState);
   return (
