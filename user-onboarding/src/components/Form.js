@@ -110,7 +110,7 @@ export default function Form() {
         Email:
         <input
           id="email"
-          type="text"
+          type="email"
           name="email"
           value={formState.email}
           onChange={inputChange}
@@ -121,8 +121,9 @@ export default function Form() {
       </label>
       <label htmlFor="password">
         Please set your password.
-        <textarea
+        <input
           id="password"
+          type="password"
           name="password"
           value={formState.password}
           onChange={inputChange}
